@@ -1,18 +1,14 @@
 package com.wk.spring.testdemo;
 
 import com.wk.spring.Book;
-import com.wk.spring.HelloWorld;
 import com.wk.spring.Orders;
 import com.wk.spring.config.SpringConfig;
-import com.wk.spring.service.LoginService;
-import com.wk.spring.service.LoginServiceIml;
+import com.wk.spring.service.LoginServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
-
-import java.nio.file.Path;
 
 
 public class TestDemo {
@@ -59,7 +55,7 @@ public class TestDemo {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(SpringConfig.class);
 
-        LoginServiceIml login = context.getBean("login", LoginServiceIml.class);
+        LoginServiceImpl login = context.getBean("login", LoginServiceImpl.class);
         System.out.println(login);
         System.out.println(login.getUser());
         login.getUser().update("what");
