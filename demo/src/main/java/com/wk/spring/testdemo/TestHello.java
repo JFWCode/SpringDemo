@@ -18,6 +18,7 @@ public class TestHello {
         HelloWorld hw = context.getBean("hello", HelloWorld.class);
         System.out.println(hw);
         hw.sayHello();
+
     }
 
     @Test
@@ -30,4 +31,8 @@ public class TestHello {
         hw.sayHello();
     }
 
+    @Override
+    public String toString() {
+        return "TestHello{}";
+    }
 }

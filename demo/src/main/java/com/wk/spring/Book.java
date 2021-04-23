@@ -4,6 +4,15 @@ public class Book {
 
     private String name;
     private String category;
+    private Author author;
+
+    public void setAuthor(Author author) {
+        this.author = author;
+    }
+
+    public Author getAuthor() {
+        return author;
+    }
 
     public void setCategory(String category) {
         this.category = category;
