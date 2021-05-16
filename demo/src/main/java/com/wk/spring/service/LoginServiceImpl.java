@@ -29,25 +29,9 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public void updateUser(String value) {
-        MathOperation add = (x, y) -> x + y;
-        MathOperation sub = (x, y) -> {
-            return x - y;
-        };
-        Creeting c = val -> {
-            System.out.println(val);
-        };
-        c.greeting("down");
-        System.out.println(add.operator(12, 21));
-        System.out.println(sub.operator(12, 21));
-        user.update(value);
-    }
-
-    interface MathOperation {
-        int operator(int a, int b);
-    }
-
-   interface Creeting {
-        void greeting(String val);
+        if (user != null) {
+            user.update(value);
+        }
     }
 
     @Test
