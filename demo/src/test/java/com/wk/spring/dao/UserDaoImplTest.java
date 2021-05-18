@@ -1,8 +1,8 @@
 package com.wk.spring.dao;
 
+import com.wk.spring.core.model.User;
 import junit.framework.TestCase;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.transaction.PlatformTransactionManager;
 
 import java.util.List;
 
