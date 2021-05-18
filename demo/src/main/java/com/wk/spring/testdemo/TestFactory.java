@@ -20,4 +20,17 @@ public class TestFactory {
         System.out.println(lu.getUser());
         lu.getUser().update("what");
     }
+
+    @Test
+    public void TestStaticFactory() {
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("classpath:bean3.xml");
+
+//        LoginUser lu = (LoginUser) context.getBean("login", LoginUser.class);
+//        System.out.println(lu);
+//        System.out.println(lu.getUser());
+//        lu.getUser().update("what");
+        UserDaoImpl udi = context.getBean("staticFactory", UserDaoImpl.class);
+        udi.update("wow");
+    }
 }
