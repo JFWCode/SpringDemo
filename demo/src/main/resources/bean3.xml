@@ -8,8 +8,10 @@
 
 
     <bean id="login" class="com.wk.spring.service.LoginUser">
-        <property name="user" ref="factory"></property>
+        <property name="user" ref="staticFactory"></property>
     </bean>
+
+    <bean id="staticFactory" class="com.wk.spring.dao.UserDaoFactory" factory-method="getUserDao"></bean>
 
     <bean id="factory" class="com.wk.spring.dao.UserDaoFactoryBean"></bean>
 

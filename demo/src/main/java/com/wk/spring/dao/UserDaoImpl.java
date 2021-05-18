@@ -1,12 +1,11 @@
 package com.wk.spring.dao;
 
-import com.wk.spring.Book;
+import com.wk.spring.core.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
-import java.sql.*;
 import java.util.List;
 
 @Component

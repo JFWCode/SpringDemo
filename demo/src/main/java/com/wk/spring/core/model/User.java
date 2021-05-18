@@ -1,4 +1,4 @@
-package com.wk.spring.dao;
+package com.wk.spring.core.model;
 
 import java.io.Serializable;
 

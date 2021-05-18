@@ -1,5 +1,7 @@
 package com.wk.spring.dao;
 
+import com.wk.spring.core.model.User;
+
 import java.util.List;
 
 public interface UserDao {
